@@ -48,29 +48,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <repository>
-            <id>jboss-repo</id>
-            <name>JBoss Repository</name>
-            <url>https://repository.jboss.org/nexus/content/repositories/releases</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>mqtt-repo</id>
-            <name>MQTT Repository</name>
-            <url>https://repo.eclipse.org/content/repositories/paho-releases</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
+        <!--<repository>
             <id>horton-repo</id>
             <name>Hortonworks Repository</name>
             <url>http://repo.hortonworks.com/content/repositories/releases/</url>
@@ -80,29 +58,7 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
-        <repository>
-            <id>cloudera-repo</id>
-            <name>Cloudera Repository</name>
-            <url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>mapr-repo</id>
-            <name>MapR Repository</name>
-            <url>http://repository.mapr.com/maven</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
+        </repository>-->
     </repositories>
 
 
@@ -346,23 +302,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-
-            <!--<plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <descriptor>src/main/assembly/assembly.xml</descriptor>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>make-assembly</id> &lt;!&ndash; this is used for inheritance merges &ndash;&gt;
-                        <phase>package</phase> &lt;!&ndash; bind to the packaging phase &ndash;&gt;
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>-->
 
         </plugins>
     </build>

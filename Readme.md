@@ -1,15 +1,17 @@
 SparkDemo
 =========
 
-A Simple Application using Apache Spark that can be run against a Hadoop Cluster
+This maven project creates a Simple Application using Apache Spark that can be run against a Hadoop Cluster.
+The project uses Hortonwork's maven repository to resolve Spark depedencies.
 
 To package the application
 
->mvn package
+>mvn clean package
 
 One of the artifact this will produce is ../target/SparkDemo-1.1.0.jar
 
-Copy the jar to your Hadoop Cluster
+Copy the jar to your Hadoop Cluster. In this example I am pushing the 
+produced SparkDemo jar to an HDP 2.1 Sandbox
 > scp -P 2222 target/SparkDemo-1.1.0.jar root@127.0.0.1:/root
 
 Go to your Hadoop cluster & ensure you have set the YARN_CONF_DIR
