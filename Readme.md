@@ -21,18 +21,28 @@ On the HDP 2.1 cluster
 
 > export YARN_CONF_DIR=/etc/hadoop/conf
 
+**Build the Application:**
+
 On your dev environment to build & package the application
 
 >mvn clean package
 
 One of the artifact this will produce is ../target/SparkDemo-1.1.0.jar
 
+**Copy the Application to Hadoop Cluster**
+
 Copy the jar to your Hadoop Cluster. In this example I am pushing the 
 produced SparkDemo jar to an HDP 2.1 Sandbox
 > scp -P 2222 target/SparkDemo-1.1.0.jar root@127.0.0.1:/root
 
+
+**Run the Application on Hadoop Cluster**
+
 Go to your Hadoop cluster & ensure you have set the YARN_CONF_DIR
 cd to your Spark home dir and run the following, ensure the path to SparkDemo-1.1.0.jar is where you copied the SparkDemo on your Hadoop cluster
+and ensure 
+> export YARN_CONF_DIR=/etc/hadoop/conf
+
 
 > cd spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695
 
