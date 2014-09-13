@@ -9,17 +9,17 @@ Prerequisites:
 
 Ensure you have downloaded Spark 1.1.0 tarball and copied it to your HDP 2.1 cluster.
 
-wget http://path/to/spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695.tgz
+> wget http://path/to/spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695.tgz
 
-scp -P 2222 spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695.tgz
+> scp -P 2222 spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695.tgz
  root@127.0.0.1:/root
 
 Note: The password for HDP 2.1 Sandbox is hadoop.
 
 On the HDP 2.1 cluster 
-tar xvfz spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695.tgz
+> tar xvfz spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695.tgz
 
-export YARN_CONF_DIR=/etc/hadoop/conf
+> export YARN_CONF_DIR=/etc/hadoop/conf
 
 On your dev environment to build & package the application
 
@@ -34,7 +34,9 @@ produced SparkDemo jar to an HDP 2.1 Sandbox
 Go to your Hadoop cluster & ensure you have set the YARN_CONF_DIR
 cd to your Spark home dir and run the following, ensure the path to SparkDemo-1.1.0.jar is where you copied the SparkDemo on your Hadoop cluster
 
-./bin/spark-submit --class com.whiteware.sparkdemo.SimpleApp --master yarn-cluster --num-executors 3 --driver-memory 512m --executor-memory 512m --executor-cores 1 ../SparkDemo-1.1.0.jar
+> cd spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695
+
+> ./bin/spark-submit --class com.whiteware.sparkdemo.SimpleApp --master yarn-cluster --num-executors 3 --driver-memory 512m --executor-memory 512m --executor-cores 1 ../SparkDemo-1.1.0.jar
 
 Running the spark-submit will produce an output similar to 
 
