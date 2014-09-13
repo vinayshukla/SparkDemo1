@@ -4,7 +4,24 @@ SparkDemo
 This maven project creates a Simple Application using Apache Spark that can be run against a Hadoop Cluster.
 The project uses Hortonwork's maven repository to resolve Spark depedencies.
 
-To package the application
+
+Prerequisites:
+
+Ensure you have downloaded Spark 1.1.0 tarball and copied it to your HDP 2.1 cluster.
+
+wget http://path/to/spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695.tgz
+
+scp -P 2222 spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695.tgz
+ root@127.0.0.1:/root
+
+Note: The password for HDP 2.1 Sandbox is hadoop.
+
+On the HDP 2.1 cluster 
+tar xvfz spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695.tgz
+
+export YARN_CONF_DIR=/etc/hadoop/conf
+
+On your dev environment to build & package the application
 
 >mvn clean package
 
