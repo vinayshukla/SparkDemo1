@@ -5,7 +5,7 @@ This maven project creates a Simple Application using Apache Spark that can be r
 The project uses Hortonwork's maven repository to resolve Spark depedencies.
 
 
-Prerequisites:
+**Prerequisites:**
 
 Ensure you have downloaded Spark 1.1.0 tarball and copied it to your HDP 2.1 cluster.
 
