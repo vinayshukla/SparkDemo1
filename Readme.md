@@ -7,7 +7,8 @@ The project uses Hortonwork's maven repository to resolve Spark depedencies.
 
 **Prerequisites:**
 
-Ensure you have downloaded Spark 1.1.0 tarball and copied it to your HDP 2.1 cluster.
+Ensure you have downloaded Spark 1.1.0 tarball and copied it to your HDP 2.1 cluster. You can follow Hortowork's Tech Preview of Spark 1.1.o for instructions on how to 
+setup Spark on your Hadoop cluster. 
 
 > wget http://path/to/spark-1.1.0.2.1.5.0-695-bin-2.4.0.2.1.5.0-695.tgz
 
